@@ -1,14 +1,12 @@
-# ফ্লাস্ক ইনস্টলেশন
-
----
+# ইনস্টলেশন
 
 ফ্লাস্ক ইনস্টল করার আগে Python ইনস্টল করে নিতে হবে। কীভাবে ইনস্টল করতে হয় না জানলে এখান থেকে দেখে নাও।
 
-[https://python.maateen.me/before-the-beginning.html\#উইন্ডোজ](https://python.maateen.me/before-the-beginning.html#উইন্ডোজ)
+[https://python.maateen.me/before-the-beginning.html](https://python.maateen.me/before-the-beginning.html#উইন্ডোজ)
 
 ফ্লাস্ক ইনস্টল করতে নিচের কমান্ডটা তোমাদের কমান্ড প্রোম্পটে চালাও।
 
-```
+```text
 pip install flask
 ```
 
