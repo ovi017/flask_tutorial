@@ -1,0 +1,315 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ইউআরএল বিল্ডিং · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="variablerules.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ভূমিকা
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    ইনস্টলেশন
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="flaskscript.html">
+            
+                <a href="flaskscript.html">
+            
+                    
+                    প্রথম ফ্লাস্ক প্রোগ্রাম
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="urlrouting.html">
+            
+                <a href="urlrouting.html">
+            
+                    
+                    রাউটিং
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="variablerules.html">
+            
+                <a href="variablerules.html">
+            
+                    
+                    ভ্যারিয়েবল রুলস
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="urlbuilding.html">
+            
+                <a href="urlbuilding.html">
+            
+                    
+                    ইউআরএল বিল্ডিং
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >ইউআরএল বিল্ডিং</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x9A1;&#x9BE;&#x987;&#x9A8;&#x9BE;&#x9AE;&#x9BF;&#x995;&#x9CD;&#x9AF;&#x9BE;&#x9B2;&#x9BF; &#x987;&#x989;&#x986;&#x9B0;&#x98F;&#x9B2; &#x9AC;&#x9BF;&#x9B2;&#x9CD;&#x9A1;&#x9BF;&#x982;&#x9DF;&#x9C7;&#x9B0; &#x99C;&#x9A8;&#x9CD;&#x9AF; <strong>url_for()</strong> &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x9C7;&#x9B0; &#x995;&#x9A5;&#x9BE; &#x99B;&#x9BE;&#x9DC;&#x9BE; &#x98F;&#x987; &#x9AC;&#x987; &#x9B8;&#x9AE;&#x9CD;&#x9AA;&#x9C2;&#x9B0;&#x9CD;&#x9A3; &#x9B9;&#x9AC;&#x9C7; &#x9A8;&#x9BE;&#x964; &#x98F;&#x987; &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x9C7;&#x9B0; &#x995;&#x9BE;&#x99C; &#x9AC;&#x9C1;&#x99D;&#x9BE;&#x9B0; &#x99C;&#x9A8;&#x9CD;&#x9AF; &#x995;&#x9CB;&#x9A1; &#x9B2;&#x9C7;&#x996;&#x9BE; &#x9B6;&#x9C1;&#x9B0;&#x9C1; &#x995;&#x9B0;&#x9BF;---</p>
+<pre><code class="lang-py">from flask import Flask, redirect, url_for
+app = Flask(__name__)
+
+@app.route(&apos;/admin&apos;)
+def hello_admin():
+   return &quot;You are the Great Admin&quot;
+
+@app.route(&apos;/guest/&lt;guest&gt;&apos;)
+def hello_guest(guest):
+   return (&apos;Welcome &quot;,guest)
+
+@app.route(&apos;/user/&lt;name&gt;&apos;)
+def user(name):
+   if name ==&apos;admin&apos;:                         #name &#x99F;&#x9BE; admin &#x9B9;&#x9B2;&#x9C7;
+      return redirect(url_for(&apos;hello_admin&apos;)) #&#x9AF;&#x9BE;&#x9AC;&#x9C7; localhost:5000/admin &#x987;&#x989;&#x986;&#x9B0;&#x98F;&#x9B2; &#x98F;
+   else:                                      #&#x9A4;&#x9BE; &#x9A8;&#x9BE; &#x9B9;&#x9B2;&#x9C7; &#x9AF;&#x9BE;&#x9AC;&#x9C7; localhost:5000/guest/&lt;guest&gt; &#x987;&#x989;&#x986;&#x9B0;&#x98F;&#x9B2; &#x98F;
+      return redirect(url_for(&apos;hello_guest&apos;,guest = name)) #&#x98F;&#x996;&#x9BE;&#x9A8;&#x9C7; guest &#x9AA;&#x9CD;&#x9AF;&#x9BE;&#x9B0;&#x9BE;&#x9AE;&#x9BF;&#x99F;&#x9BE;&#x9B0;&#x9C7; name &#x986;&#x9B0;&#x9CD;&#x997;&#x9C1;&#x9AE;&#x9C7;&#x9A8;&#x9CD;&#x99F; &#x9A6;&#x9C7;&#x993;&#x9DF;&#x9BE; &#x9B9;&#x9DF;&#x9C7;&#x99B;&#x9C7;
+                                                           #&#x995;&#x9BE;&#x9B0;&#x9A3; hello_guest &#x98F;&#x9B0; &#x9AA;&#x9CD;&#x9AF;&#x9B0;&#x9BE;&#x9AE;&#x9BF;&#x99F;&#x9BE;&#x9B0; guest
+
+if __name__ == &apos;__main__&apos;:
+   app.run(debug = True)
+</code></pre>
+<p>&#x989;&#x9AA;&#x9B0;&#x9C7;&#x9B0; &#x9AA;&#x9CD;&#x9B0;&#x9CB;&#x997;&#x9CD;&#x9B0;&#x9BE;&#x9AE;&#x9C7; user(name) &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x99F;&#x9BF; &#x98F;&#x995;&#x99F;&#x9BF; name &#x9AD;&#x9CD;&#x9AF;&#x9BE;&#x9B0;&#x9BF;&#x9DF;&#x9C7;&#x9AC;&#x9B2; &#x987;&#x9A8;&#x9AA;&#x9C1;&#x99F; &#x9A8;&#x9BF;&#x9AC;&#x9C7;&#x964; &#x9A4;&#x9BE;&#x9B0;&#x9AA;&#x9B0; &#x9A4;&#x9C1;&#x9B2;&#x9A8;&#x9BE; &#x995;&#x9B0;&#x9C7; &#x9A6;&#x9C7;&#x996;&#x9AC;&#x9C7; &#x98F;&#x99F;&#x9BE;<strong> &apos;admin&apos;</strong> &#x995;&#x9BF;&#x9A8;&#x9BE;, &#x9AF;&#x9A6;&#x9BF; &#x9B9;&#x9DF; &#x9A4;&#x9AC;&#x9C7; <strong>return redirect(url_for(&apos;hello_admin&apos;))</strong> &#x9B8;&#x9CD;&#x99F;&#x9C7;&#x99F;&#x9AE;&#x9C7;&#x9A8;&#x9CD;&#x99F;&#x99F;&#x9BF; &#x99A;&#x9B2;&#x9AC;&#x9C7;&#x964; &#x98F;&#x996;&#x9BE;&#x9A8;&#x9C7; <strong>url_for(&apos;hello_admin&apos;)</strong> &#x99C;&#x9BF;&#x9A8;&#x9BF;&#x9B8;&#x99F;&#x9BE; <strong>hello_admin()</strong> &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x9C7;&#x9B0; &#x99C;&#x9A8;&#x9CD;&#x9AF; &#x9AF;&#x9C7; &#x987;&#x989;&#x986;&#x9B0;&#x98F;&#x9B2;&#x99F;&#x9BF; &#x9AC;&#x9B0;&#x9BE;&#x9A6;&#x9CD;&#x9A6; &#x9B8;&#x9C7;&#x987; &#x987;&#x989;&#x986;&#x9B0;&#x98F;&#x9B2;&#x99F;&#x9BF; &#x9B0;&#x9BF;&#x99F;&#x9BE;&#x9B0;&#x9CD;&#x9A8; &#x995;&#x9B0;&#x9AC;&#x9C7;&#x964; &#x986;&#x9B0; redirect() &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x99F;&#x9BF; &#x9B8;&#x9C7;&#x987; &#x987;&#x989;&#x986;&#x9B0;&#x98F;&#x9B2; &#x98F; &#x986;&#x9AE;&#x9A6;&#x9C7;&#x9B0; &#x9A8;&#x9BF;&#x9DF;&#x9C7; &#x9AF;&#x9BE;&#x9AC;&#x9C7;&#x964;</p>
+<p>&#x98F;&#x9B0;&#x9AA;&#x9B0; &#x9A6;&#x9C7;&#x996; <strong>url_for(&apos;hello_guest&apos;,guest = name)</strong> &#x9B8;&#x9CD;&#x99F;&#x9C7;&#x99F;&#x9AE;&#x9C7;&#x9A8;&#x99F;&#x9BF;, &#x98F;&#x996;&#x9BE;&#x9A8;&#x9C7; <strong>&apos;hello_guest&apos;</strong> &#x9A6;&#x9C7;&#x993;&#x9DF;&#x9BE; &#x9B9;&#x9DF;&#x9C7;&#x99B;&#x9C7; &#x995;&#x9BE;&#x9B0;&#x9A3; &#x986;&#x9AE;&#x9B0;&#x9BE; &#x98F;&#x9AC;&#x9BE;&#x9B0; <strong>hello_guest(guest)</strong> &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x9C7;&#x9B0; &#x987;&#x989;&#x986;&#x9B0;&#x98F;&#x9B2; &#x9AC;&#x9C7;&#x9B0; &#x995;&#x9B0;&#x9A4;&#x9C7; &#x99A;&#x9BE;&#x99A;&#x9CD;&#x99B;&#x9BF;&#x964; <strong>guest </strong>&#x9AA;&#x9CD;&#x9AF;&#x9B0;&#x9BE;&#x9AE;&#x9BF;&#x99F;&#x9BE;&#x9B0;&#x9C7; <strong>name</strong> &#x986;&#x9B0;&#x9CD;&#x997;&#x9C1;&#x9AE;&#x9C7;&#x9A8;&#x9CD;&#x99F; &#x9A6;&#x9C7;&#x993;&#x9DF;&#x9BE; &#x9B9;&#x9DF;&#x9C7;&#x99B;&#x9C7; &#x995;&#x9BE;&#x9B0;&#x9A3; <strong>hello_guest(guest)</strong> &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x9C7; <strong>guest</strong> &#x9AA;&#x9CD;&#x9AF;&#x9BE;&#x9B0;&#x9BE;&#x9AE;&#x9BF;&#x99F;&#x9BE;&#x9B0; &#x986;&#x99B;&#x9C7;&#x964;</p>
+<p>&#x98F;&#x995;&#x99F;&#x9BE; &#x99C;&#x9BF;&#x9A8;&#x9BF;&#x9B8; &#x996;&#x9C7;&#x9DF;&#x9BE;&#x9B2; &#x995;&#x9B0;&#x9C7; &#x9A6;&#x9C7;&#x996;&#x9C7;&#x99B;&#x9C7;&#x9A8; <strong>app.run(debug = True)</strong> &#x98F; &#x986;&#x9AE;&#x9BF; &#x98F;&#x995;&#x99F;&#x9BE; <strong>debug</strong> &#x9AA;&#x9CD;&#x9AF;&#x9BE;&#x9B0;&#x9BE;&#x9AE;&#x9BF;&#x99F;&#x9BE;&#x9B0;&#x9C7; <strong>True</strong> &#x986;&#x9B0;&#x9CD;&#x997;&#x9C1;&#x9AE;&#x9C7;&#x9A8;&#x9CD;&#x99F; &#x9A6;&#x9C7;&#x993;&#x9DF;&#x9BE; &#x9B9;&#x9DF;&#x9C7;&#x99B;&#x9C7;&#x964; &#x98F;&#x9B0; &#x9AE;&#x9BE;&#x9A7;&#x9CD;&#x9AF;&#x9AE;&#x9C7; &#x986;&#x9AE;&#x9B0;&#x9BE; &#x995;&#x9CB;&#x9A1;&#x9BF;&#x982; &#x98F;&#x9B0; &#x9B8;&#x9AE;&#x9DF; &#x9AC;&#x9BE;&#x9DC;&#x9A4;&#x9BF; &#x9B8;&#x9C1;&#x9AC;&#x9BF;&#x9A7;&#x9BE; &#x9AA;&#x9BE;&#x9AC;&#x964; &#x995;&#x9CB;&#x9A1;&#x9BF;&#x982; &#x98F;&#x9B0; &#x9B8;&#x9AE;&#x9DF; &#x986;&#x9AE;&#x9BE;&#x9A6;&#x9C7;&#x9B0; &#x985;&#x9A8;&#x9C7;&#x995; &#x9AD;&#x9C1;&#x9B2;&#x9A4;&#x9CD;&#x9B0;&#x9C1;&#x99F;&#x9BF; &#x9B9;&#x9DF;&#x964; &#x9A4;&#x9BE; &#x9B8;&#x982;&#x9B6;&#x9CB;&#x9A7;&#x9A8; &#x995;&#x9B0;&#x9C7; &#x995;&#x9BF;&#x9A8;&#x9CD;&#x9A4;&#x9C1; &#x986;&#x9AC;&#x9BE;&#x9B0; &#x9AA;&#x9CD;&#x9B0;&#x9CB;&#x997;&#x9CD;&#x9B0;&#x9BE;&#x9AE;&#x99F;&#x9BE;(&#x9AB;&#x9CD;&#x9B2;&#x9BE;&#x9B8;&#x9CD;&#x995; &#x9B8;&#x9CD;&#x995;&#x9CD;&#x9B0;&#x9BF;&#x9AA;&#x9CD;&#x99F;&#x9C7;&#x9B0; &#x995;&#x9A5;&#x9BE; &#x9AC;&#x9B2;&#x99B;&#x9BF;) &#x9B0;&#x9BE;&#x9A8; &#x995;&#x9B0;&#x9A4;&#x9C7; &#x9B9;&#x9DF;&#x964; &#x995;&#x9BF;&#x9A8;&#x9CD;&#x9A4;&#x9C1; &#x98F;&#x987; &#x995;&#x9BE;&#x99C;&#x99F;&#x9BE; &#x995;&#x9B0;&#x9B2;&#x9C7; &#x9AB;&#x9CD;&#x9B2;&#x9BE;&#x9B8;&#x9CD;&#x995; &#x9B8;&#x9CD;&#x995;&#x9CD;&#x9B0;&#x9BF;&#x9AA;&#x9CD;&#x99F; &#x9AC;&#x9BE;&#x9B0;&#x9AC;&#x9BE;&#x9B0; &#x9B0;&#x9BE;&#x9A8; &#x995;&#x9B0;&#x9A4;&#x9C7; &#x9B9;&#x9DF; &#x9A8;&#x9BE;&#x964; &#x9B8;&#x982;&#x9B6;&#x9CB;&#x9A7;&#x9A8; &#x995;&#x9B0;&#x9BE;&#x9B0; &#x9AA;&#x9B0; &#x98F;&#x9AE;&#x9A8;&#x9BF;&#x9A4;&#x9C7;&#x987; &#x9B0;&#x9BE;&#x9A8; &#x9B9;&#x9A4;&#x9C7; &#x9A5;&#x9BE;&#x995;&#x9BE; &#x9B8;&#x9CD;&#x995;&#x9CD;&#x9B0;&#x9BF;&#x9AA;&#x9CD;&#x99F; &#x9AA;&#x9C1;&#x9A8;&#x9B0;&#x9BE;&#x9DF; &#x9AA;&#x9CD;&#x9B0;&#x9A5;&#x9AE; &#x9A5;&#x9C7;&#x995;&#x9C7; &#x9B0;&#x9BE;&#x9A8; &#x9B9;&#x993;&#x9DF;&#x9BE; &#x9B6;&#x9C1;&#x9B0;&#x9C1; &#x995;&#x9B0;&#x9C7;&#x964;</p>
+<p>&#x9AA;&#x9B0;&#x9C7;&#x9B0; &#x985;&#x9A7;&#x9CD;&#x9AF;&#x9BE;&#x9DF;&#x9C7;&#x9B0; &#x99C;&#x9A8;&#x9CD;&#x9AF; &#x9A4;&#x9C8;&#x9B0;&#x9C0; &#x9A5;&#x9BE;&#x995;......</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="variablerules.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: ভ্যারিয়েবল রুলস">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ইউআরএল বিল্ডিং","level":"1.6","depth":1,"previous":{"title":"ভ্যারিয়েবল রুলস","level":"1.5","depth":1,"path":"variablerules.md","ref":"variablerules.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"urlbuilding.md","mtime":"2018-12-26T05:48:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-08T07:49:08.747Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

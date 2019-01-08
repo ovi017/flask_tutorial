@@ -1,0 +1,320 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>রাউটিং · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="variablerules.html" />
+    
+    
+    <link rel="prev" href="flaskscript.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ভূমিকা
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    ইনস্টলেশন
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="flaskscript.html">
+            
+                <a href="flaskscript.html">
+            
+                    
+                    প্রথম ফ্লাস্ক প্রোগ্রাম
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="urlrouting.html">
+            
+                <a href="urlrouting.html">
+            
+                    
+                    রাউটিং
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="variablerules.html">
+            
+                <a href="variablerules.html">
+            
+                    
+                    ভ্যারিয়েবল রুলস
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="urlbuilding.html">
+            
+                <a href="urlbuilding.html">
+            
+                    
+                    ইউআরএল বিল্ডিং
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >রাউটিং</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x9AE;&#x9A1;&#x9BE;&#x9B0;&#x9CD;&#x9A3; &#x993;&#x9DF;&#x9C7;&#x9AC; &#x9AB;&#x9CD;&#x9B0;&#x9C7;&#x9AE;&#x993;&#x9DF;&#x9BE;&#x9B0;&#x9CD;&#x995;&#x997;&#x9C1;&#x9B2;&#x9CB; &#x9B0;&#x9BE;&#x989;&#x99F;&#x9BF;&#x982; &#x99F;&#x9C7;&#x995;&#x9A8;&#x9BF;&#x995; &#x9AC;&#x9CD;&#x9AF;&#x9AC;&#x9B9;&#x9BE;&#x9B0; &#x995;&#x9B0;&#x9C7; &#x9A5;&#x9BE;&#x995;&#x9C7;&#x964; &#x9B8;&#x9B0;&#x9BE;&#x9B8;&#x9B0;&#x9BF; &#x993;&#x9DF;&#x9C7;&#x9AC;&#x9C7;&#x9B0; &#x995;&#x9CB;&#x9A8;&#x9CB; &#x9AA;&#x9C7;&#x99C; &#x985;&#x9CD;&#x9AF;&#x9BE;&#x995;&#x9CD;&#x9B8;&#x9C7;&#x9B8; &#x995;&#x9B0;&#x9A4;&#x9C7; &#x98F;&#x99F;&#x9BE; &#x996;&#x9AC;&#x987; &#x9B9;&#x9C7;&#x9B2;&#x9CD;&#x9AA;&#x9AB;&#x9C1;&#x9B2;&#x964;</p>
+<p>&#x986;&#x9AE;&#x9B0;&#x9BE; &#x986;&#x997;&#x9C7;&#x9B0; &#x99A;&#x9CD;&#x9AF;&#x9BE;&#x9AA;&#x9CD;&#x99F;&#x9BE;&#x9B0;&#x9C7;&#x987; &#x9A4;&#x9BE; &#x9AC;&#x9CD;&#x9AF;&#x9AC;&#x9B9;&#x9BE;&#x9B0; &#x995;&#x9B0;&#x9C7;&#x99B;&#x9BF;&#x964; &#x9B9;&#x9CD;&#x9AF;&#x9BE;&#x981;, &#x993;&#x987; <strong>route()</strong> <strong>&#x9A1;&#x9C7;&#x995;&#x9CB;&#x9B0;&#x9C7;&#x99F;&#x9B0;&#x99F;&#x9BE;</strong>&#x964;</p>
+<p><strong>route(rule, options)</strong>:</p>
+<ul>
+<li><p><strong>rule </strong>&#x9AA;&#x9CD;&#x9AF;&#x9BE;&#x9B0;&#x9BE;&#x9AE;&#x9BF;&#x99F;&#x9BE;&#x9B0;&#x99F;&#x9BE; &#x9AC;&#x9CD;&#x9AF;&#x9AC;&#x9B9;&#x9BE;&#x9B0; &#x995;&#x9B0;&#x9BE; &#x9B9;&#x9DF; &#x995;&#x9CB;&#x9A8; URL &#x98F; &#x986;&#x9AE;&#x9B0;&#x9BE; &#x986;&#x9AE;&#x9BE;&#x9A6;&#x9C7;&#x9B0; &#x986;&#x989;&#x99F;&#x9AA;&#x9C1;&#x99F; &#x9A6;&#x9C7;&#x996;&#x9BE;&#x9A4;&#x9C7; &#x99A;&#x9BE;&#x987;&#x964;</p>
+</li>
+<li><p><strong>options</strong> &#x9AA;&#x9CD;&#x9AF;&#x9BE;&#x9B0;&#x9BE;&#x9AE;&#x9BF;&#x99F;&#x9BE;&#x9B0; &#x98F;&#x996;&#x9A8; &#x99C;&#x9BE;&#x9A8;&#x9BE;&#x9B0; &#x9A6;&#x9B0;&#x9BE;&#x995;&#x9BE;&#x9B0; &#x9A8;&#x9C7;&#x987;&#x964;</p>
+</li>
+</ul>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask
+app = Flask(__name__)
+
+<span class="hljs-meta">@app.route(&quot;/love&quot;)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">patriot</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;I love my country&quot;</span>
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>: 
+   app.run()
+</code></pre>
+<p>&#x989;&#x9AA;&#x9B0;&#x9C7;&#x9B0; &#x989;&#x9A6;&#x9BE;&#x9B9;&#x9B0;&#x9A3;&#x9C7; &#x986;&#x9AE;&#x9B0;&#x9BE; &quot;/love&quot; &#x9B0;&#x9C1;&#x9B2;&#x99F;&#x9BE; <strong>patriot()</strong> &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x9C7;&#x9B0; &#x9B8;&#x9BE;&#x9A5;&#x9C7; &#x9AC;&#x9BE;&#x989;&#x9A8;&#x9CD;&#x9A1; &#x995;&#x9B0;&#x9BE; &#x9B9;&#x9DF;&#x9C7;&#x99B;&#x9C7;&#x964; &#x98F;&#x996;&#x9A8; &#x9AF;&#x9A6;&#x9BF; &#x986;&#x9AE;&#x9B0;&#x9BE; <a href="http://localhost:5000/love" target="_blank">http://localhost:5000/love</a> URL &#x9AD;&#x9BF;&#x99C;&#x9BF;&#x99F; &#x995;&#x9B0;&#x9C7; &#x9A4;&#x9BE;&#x9B9;&#x9B2;&#x9C7; patriot() &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x9C7;&#x9B0; &#x986;&#x989;&#x99F;&#x9AA;&#x9C1;&#x99F;&#x99F;&#x9BE; &#x9AC;&#x9CD;&#x9B0;&#x9BE;&#x989;&#x99C;&#x9BE;&#x9B0;&#x9C7; &#x9B0;&#x9BF;&#x9A8;&#x9CD;&#x9A1;&#x9BE;&#x9B0; &#x9B9;&#x9AC;&#x9C7;&#x964;</p>
+<p>&#x986;&#x9AE;&#x9B0;&#x9BE; <strong>add_rule_url()</strong> &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x993; &#x9AC;&#x9CD;&#x9AF;&#x9AC;&#x9B9;&#x9BE;&#x9B0; &#x995;&#x9B0;&#x9A4;&#x9C7; &#x9AA;&#x9BE;&#x9B0;&#x9BF; &#x98F;&#x995;&#x987; &#x995;&#x9BE;&#x99C;&#x9C7;&#x9B0; &#x99C;&#x9A8;&#x9CD;&#x9AF;&#x964; &#x98F;&#x9B0; &#x99C;&#x9A8;&#x9CD;&#x9AF; &#x986;&#x997;&#x9C7; &#x986;&#x9AE;&#x9BE;&#x9A6;&#x9C7;&#x9B0; &#x995;&#x9BE;&#x999;&#x9CD;&#x995;&#x9CD;&#x9B7;&#x9BF;&#x9A4; &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x99F;&#x9BE; &#x9B2;&#x9BF;&#x996;&#x9C7; &#x9A8;&#x9BF;&#x9A4;&#x9C7; &#x9B9;&#x9AC;&#x9C7;, &#x9A4;&#x9BE;&#x9B0;&#x9AA;&#x9B0; &#x989;&#x995;&#x9CD;&#x9A4; &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x99F;&#x9BE; &#x9AC;&#x9CD;&#x9AF;&#x9AC;&#x9B9;&#x9BE;&#x9B0; &#x995;&#x9B0;&#x9C7; &#x986;&#x9AE;&#x9BE;&#x9A6;&#x9C7;&#x9B0; &#x9AB;&#x9BE;&#x982;&#x9B6;&#x9A8;&#x99F;&#x9BE; &#x9AC;&#x9BE;&#x989;&#x9A8;&#x9CD;&#x9A1; &#x995;&#x9B0;&#x9C7; &#x9A8;&#x9BF;&#x9A4;&#x9C7; &#x9AA;&#x9BE;&#x9B0;&#x9BF;&#x964;</p>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">patriot</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;I love my country&quot;</span>
+app.add_url_rule(&#x2018;/&#x2019;, &#x2018;love&#x2019;, patriot)
+</code></pre>
+<p>&#x98F;&#x9AC;&#x9BE;&#x9B0; &#x986;&#x9AA;&#x9A8;&#x9BE;&#x9B0; &#x9B8;&#x9A6;&#x9CD;&#x9AF; &#x985;&#x9B0;&#x9CD;&#x99C;&#x9BF;&#x9A4; &#x9AC;&#x9BF;&#x9A6;&#x9CD;&#x9AF;&#x9BE; &#x99A;&#x9B0;&#x9CD;&#x99A;&#x9BE; &#x995;&#x9B0;&#x9A4;&#x9C7; &#x9A5;&#x9BE;&#x995;&#x9C1;&#x9A8;&#x964; &#x9A5;&#x9CD;&#x9AF;&#x9BE;&#x982;&#x995;&#x9B8;...</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="flaskscript.html" class="navigation navigation-prev " aria-label="Previous page: প্রথম ফ্লাস্ক প্রোগ্রাম">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="variablerules.html" class="navigation navigation-next " aria-label="Next page: ভ্যারিয়েবল রুলস">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"রাউটিং","level":"1.4","depth":1,"next":{"title":"ভ্যারিয়েবল রুলস","level":"1.5","depth":1,"path":"variablerules.md","ref":"variablerules.md","articles":[]},"previous":{"title":"প্রথম ফ্লাস্ক প্রোগ্রাম","level":"1.3","depth":1,"path":"flaskscript.md","ref":"flaskscript.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"urlrouting.md","mtime":"2018-11-13T08:52:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-08T07:49:08.747Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
